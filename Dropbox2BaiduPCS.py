@@ -10,11 +10,13 @@ import os
 import time
 import codecs
 
-print 'Dropbox 2 Baidu PCS Py'  
+print ''
+print 'Dropbox 2 Baidu PCS Py'
+print ''  
 print 'Copyright (C) 2014  Joe Molloy (info[at]hyper-typer.com)'
 print 'This program comes with ABSOLUTELY NO WARRANTY.'
 print 'This is free software, and you are welcome to redistribute it'
-
+print ''
 db_app_key = ''
 db_app_secret = ''
 db_access_token = ''

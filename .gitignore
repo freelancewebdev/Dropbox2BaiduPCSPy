@@ -7,7 +7,7 @@ skydrive.py
 sdtoken
 log.txt
 Dropbox2BaiduPCS.cfg
-bttoken_old
+btoken_old
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
