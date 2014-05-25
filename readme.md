@@ -1,4 +1,4 @@
-#Dropbox2BaiduPCSPy
+#Dropbox 2 Baidu PCS Py
 Python based Dropbox to Baidu PCS Data Migration Script
 
 ##Introduction
