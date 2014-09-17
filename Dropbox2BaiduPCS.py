@@ -86,7 +86,7 @@ def local_setup():
 		print 'and added your own values as appropriate'
 		sys.exit()
 	try:
-		db_app_key = cfg.getstring('dropbox','db_app_key')
+		db_app_key = cfg.getstring('dropbox','db-app-key')
 	except:
 		print 'No Dropbox application key set in config file'
 		sys.exit()
@@ -96,7 +96,7 @@ def local_setup():
 	else:
 		print 'db_app_key is ' + db_app_key
 	try:
-		db_app_secret = cfg.getstring('dropbox','db_app_secret')
+		db_app_secret = cfg.getstring('dropbox','db-app-secret')
 	except:
 		print 'No Dropbox application secret set in config file'
 		sys.exit()		
@@ -104,7 +104,7 @@ def local_setup():
 		print 'No Dropbox applicatiolication secret set in config file'
 		sys.exit()
 	try:
-		b_app_key = cfg.getstring('baidu','b_app_key')
+		b_app_key = cfg.getstring('baidu','b-app-key')
 	except:
 		print 'No Baidu application key set in config file'
 		sys.exit()
@@ -112,7 +112,7 @@ def local_setup():
 		print 'No Baidu application key set in config file'
 		sys.exit()
 	try:
-		b_app_secret = cfg.getstring('baidu','b_app_secret')
+		b_app_secret = cfg.getstring('baidu','b-app-secret')
 	except:
 		print 'No Baidu application secret set in config file'
 		sys.exit()
@@ -120,28 +120,28 @@ def local_setup():
 		print 'No Baidu application secret set in config file'
 		sys.exit()
 	try:
-		b_folder = cfg.getstring('baidu','b_folder')
+		b_folder = cfg.getstring('baidu','b-folder')
 	except:
 		print 'No Baidu applicatio folder set in config file'
 		sys.exit()
 	if not b_folder:
 		print 'No Baidu application folder set in config file'
 		sys.exit()
-	db_ignore_folders = cfg.getstring('dropbox','db_ignore_folders')
+	db_ignore_folders = cfg.getstring('dropbox','db-ignore-folders')
 	if db_ignore_folders:
 		ignore_folders = db_ignore_folders.split(',')
 	else:
 		ignore_folders = []
 	try:
-		secure_mode = cfg.getboolean('app','secure_mode')
+		secure_mode = cfg.getboolean('app','secure-mode')
 	except:
 		pass
 	try:
-		db_access_token = cfg.getstring('dropbox','db_access_token')
+		db_access_token = cfg.getstring('dropbox','db-access-token')
 	except:
 		pass
 	try:
-		b_access_token = cfg.getstring('baidu','b_access_token')
+		b_access_token = cfg.getstring('baidu','b-access-token')
 	except:
 		pass
 	curbpath = '/apps/' + b_folder + '/dropbox'
